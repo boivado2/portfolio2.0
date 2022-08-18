@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&family=League+Spartan:wght@400;500&display=swap');
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+
+.nav-active {
+  position: sticky;
+  background-color: #393E46;
+  transition: all 0.5s linear;
+}
+
 
   .line:hover:before {
     content: "";
@@ -13,4 +27,30 @@
     bottom: 0;
     left: 0;
     transition: all 0.5ms ease-in-out;
+  }
+
+
+
+  .project_card:hover .show-project-github-link {
+    left: 80px;
+  }
+
+  .project_card:hover .show-project-live-link {
+    right: 80px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #222831;
+    opacity: 0.7;
+    z-index: 5;
+    transform: translateY(-300px);
+  }
+
+  .project_card:hover .overlay {
+    transform: translateY(0);
   }

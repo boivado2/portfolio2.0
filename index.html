@@ -1,64 +1,257 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/main.css" rel="stylesheet">
+  <title>John Godwin || portfolio</title>
 </head>
-<body class=" bg-custom-black text-custom-space h-[2000px]">
+<body id="home" class=" bg-custom-black text-custom-space  font-condensed leading-5 scroll-smooth">
   <!-- navbar -->
- <nav class=" flex justify-between  items-center h-16 bg-custom-gray sticky top-0 px-12">
+ <nav class=" flex justify-between  items-center h-16 bg-transparent top-0 px-3 md:px-12 2xl:px-20 z-40">
  <div class="">
-  <h1 class=" text-xl md:text-3xl cursor-pointer">Godwin</h1>
+  <h1 class=" font-puff text-xl md:text-3xl cursor-pointer"><a href="#home">Godwin</a></h1>
  </div>
   
-    <ul class="flex justify-between gap-8 text-lg md:text-xl transition-all">
-      <li class="p-4 relative hover:text-custom-teal cursor-pointer "><a href="#">About</a></li>
-      <li class="p-4 relative hover:text-custom-teal cursor-pointer "><a href="#">Projects</a></li>
-      <li class="p-4 relative hover:text-custom-teal cursor-pointer "><a href="#">Contacts</a></li>
+    <ul class="md:flex justify-between gap-8 text-lg md:text-xl transition-all hidden">
+      <li class="p-4 relative hover:text-custom-teal cursor-pointer "><a href="#about">About</a></li>
+      <li class="p-4 relative hover:text-custom-teal cursor-pointer "><a href="#project">Projects</a></li>
+      <li class="p-4 relative hover:text-custom-teal cursor-pointer "><a href="#contact">Contacts</a></li>
     </ul>
 
  </nav>
 
 
-
-<main class=" md:max-w-2xl lg:max-w-[900px] xl:max-w-[1220px] 2xl:max-w-[1440px] mx-auto">
+<!-- main section -->
+<main class="">
     <!-- introduction section -->
-    <section class="py-12 flex">
-
-          <div>
+    <section class=" py-12 px-3 md:px-12 2xl:px-20 flex">
+          <div class="flex flex-col  justify-center md:items-start items-center ">
             <p class=" text-xl font-light">Hello, my name is</p>
-            <h2 class="text-7xl py-4 font-semibold">John Ayebamodiafere Godwin</h2>
-            <h3 class="text-[3.7rem] font-medium">Software Developer</h3>
-            <p class="text-2xl py-10 w-1/2 text-left font-normal">Innovative Front End Developer with good experience in maintaining and building web pages. I like to craft solid and scalable frontend products with great user experiences. Highly skilled at progressive enhancement, design systems & UI Engineering.</p>
-            <div class="flex gap-4">
-              <a class=" py-4 px-8 bg-custom-teal text-lg font-normal text-custom-space" href="#">View Resume</a>
-              <a class="py-4 px-8 bg-custom-teal text-lg font-normal text-custom-space" href="#">View Cover Letter</a>
+
+            <h2 class=" text-xl md:text-3xl xl:text-6xl text-center  py-4 font-semibold">John Ayebamodiafere Godwin</h2>
+
+            <h3 class="text-xl md:text-2xl xl:text-4xl font-normal">Software Developer</h3>
+
+            <p class="text-base md:text-xl md:w-[60%] py-10 text-center md:text-left font-light ">Innovative Front End Developer with good experience in maintaining and building web pages. I like to craft solid and scalable frontend products with great user experiences. Highly skilled at progressive enhancement, design systems & UI Engineering.</p>
+
+            <div class="flex gap-4 flex-col md:flex-row text-center">
+              <a class=" rounded-lg py-4 px-8 bg-custom-teal text-lg font-normal text-custom-space " href="#">View Resume</a>
+
+              <a class="py-4 px-8 rounded-lg bg-custom-black outline outline-custom-space outline-1 text-lg font-normal text-custom-space" href="#">View Cover Letter</a>
             </div>
           </div>
 
-          <div class=" self-end flex justify-between flex-col items-center gap-4">
 
-            <li><a href="#">icon</a></li>
+          <div class="hidden self-end md:flex justify-between flex-col items-center gap-4 flex-[20%]">
 
-            <li><a href="#">icon</a></li>
-
-            <li><a href="#">icon</a></li>
-
-            <li><a href="#">icon</a></li>
-
-            <span class=" h-14 w-1 bg-custom-gray"></span>
-
-          </div>
+            <div class="flex flex-col justify-between items-center gap-4">
+        
+              <a class="hover:bg-custom-teal rounded-xl" target="_blank"  href="https://github.com/boivado2" > 
+                <img class=" w-16 h-16" src="./images/icons8-github.svg" alt="">
+              </a>
+        
+              <a  class="hover:bg-custom-teal rounded-xl" target="_blank" href="https://twitter.com/ayi_dev">
+                <img class=" w-16 h-16"  src="./images/icons8-twitter.svg" alt="">
+              </a>
+        
+        
+              <a class="hover:bg-custom-teal rounded-xl" target="_blank" href="https://www.linkedin.com/in/john-godwin-5457501b1/">
+                <img class=" w-16 h-16" src="./images/icons8-linkedin-circled.svg" alt="">
+              </a>
+        
+            </div>
+        
+            <span class=" h-12 w-1 bg-custom-gray"></span>
+        
+        </div>
 
     </section>
 
 
-  <!-- About me section -->
+    <section class=" px-6  md:max-w-3xl lg:max-w-5xl xl:max-w-[1220px] 2xl:max-w-[1440px] mx-auto">
 
-  <!-- Projects section -->
+      
+         <!-- About me section -->
+        <section class="py-12 " id="about">
 
-  <!-- Contact section -->
+            <!-- about heading -->
+            <aside> <h2 class="lg:text-3xl font-semibold">About Me. <span class="text-custom-gray">________</span></h2></aside>
+
+            <aside class="flex flex-col-reverse  md:flex-row py-10 gap-4">
+                                  <!-- about content -->
+                <div class="flex-[50%] p-4">
+                  <p class=" text-sm lg:text-xl leading-8">
+
+                    <!-- Hello! My name is Godwin, and I enjoy creating things that live on the internet. My interest in web development started a long time ago when I decided to try editing custom wordpress themes, which made me develop huge interest in web development. -->
+                    Hello! My name is Godwin, i'm a software developer from Nigeria open to work remotely anywhere. I'm confident I'll make a difference in your team.I am currently available for freelance fulltime work. Take a look at my projects. I build responsive and user friendly website. Let me help you make sure your website is getting you as much value as possible
+                  </p>
+                  
+                  <div class="pt-7"> 
+                    <p class="text-base">Here are technologies I’ ve been working with recently:</p>
+                    <div class="grid grid-cols-3 gap-3 pt-8">
+
+                      <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">Html</span>
+
+                      <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">Css</span>
+
+                      <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">React js</span>
+
+                      <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">Node js</span>
+
+                      <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">Tailwind css</span>
+
+                        
+
+                        <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">Git</span>
+
+                          <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">Express js</span>
+
+
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <!-- about image -->
+                <div class="flex-[50%] self-start p-4">
+
+                  <img class=" w-full h-full" src="./images/undraw_fixing_bugs_w7gi.svg" alt="coding and thinking">
+
+                </div>
+            </aside>
+
+       </section>
+
+       <!-- Projects section -->
+
+        <section class="py-12 " id="project">
+          <!-- project heading -->
+          <aside>
+            <h2 class="lg:text-3xl font-semibold">Projects. <span class="text-custom-gray">________</span></h2>
+          </aside>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 pt-14">
+            <aside class="transition">
+              <div class="relative rounded-md h-52 overflow-hidden cursor-pointer project_card ">
+                <div class="overlay transition-all duration-200"></div>
+                <img class="absolute h-full w-full left-0 top-0" src="./images/undraw_fixing_bugs_w7gi.png" alt="">
+                <a class="transition-all duration-500 z-10 absolute left-[-80px] top-1/2 rounded-lg py-2 px-3 bg-custom-teal text-lg font-normal text-custom-space  show-project-github-link"  target="_blank" href="https://github.com/boivado2">Github</a>
+                <a class="z-10 duration-500 transition-all absolute right-[-80px] top-1/2 rounded-lg py-2 px-3 bg-custom-teal text-lg font-normal text-custom-space  show-project-live-link" href="#">Live</a>
+
+
+              </div>
+
+              <h3>Invoice App</h3>
+              <div class="flex gap-3">
+                <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">React js</span>
+                <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">Tailwind css</span>
+
+              </div>
+            </aside>
+
+
+            <aside class="transition">
+              <div class="relative rounded-md h-52 overflow-hidden cursor-pointer project_card ">
+                <div class="overlay transition-all duration-200"></div>
+                <img class="absolute h-full w-full left-0 top-0" src="./images/undraw_fixing_bugs_w7gi.png" alt="">
+                <a class="transition-all duration-500 z-10 absolute left-[-80px] top-1/2 rounded-lg py-2 px-3 bg-custom-gray text-lg font-normal text-custom-space  show-project-github-link"  target="_blank" href="https://github.com/boivado2">Github</a>
+                <a class="z-10 duration-500 transition-all absolute right-[-80px] top-1/2 rounded-lg py-2 px-3 bg-custom-gray text-lg font-normal text-custom-space  show-project-live-link" href="#">Live</a>
+
+
+              </div>
+
+              <h3>Invoice App</h3>
+              <div class="flex gap-3">
+                <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">React js</span>
+                <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">Tailwind css</span>
+
+              </div>
+            </aside>
+
+            
+
+            <aside class="transition">
+              <div class="relative rounded-md h-52 overflow-hidden cursor-pointer project_card ">
+                <div class="overlay transition-all duration-200"></div>
+                <img class="absolute h-full w-full left-0 top-0" src="./images/undraw_fixing_bugs_w7gi.png" alt="">
+                <a class="transition-all duration-500 z-10 absolute left-[-80px] top-1/2 rounded-lg py-2 px-3 bg-custom-teal text-lg font-normal text-custom-space  show-project-github-link"  target="_blank" href="https://github.com/boivado2">Github</a>
+                <a class="z-10 duration-500 transition-all absolute right-[-80px] top-1/2 rounded-lg py-2 px-3 bg-custom-teal text-lg font-normal text-custom-space  show-project-live-link" href="#">Live</a>
+
+
+              </div>
+
+              <h3>Invoice App</h3>
+              <div class="flex gap-3">
+                <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">React js</span>
+                <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">Tailwind css</span>
+
+              </div>
+            </aside>
+            
+            
+          </div>
+
+
+
+        </section>
+
+      <!-- Contact section -->
+
+
+      <section class="py-12 " id="contact">
+        <!-- contact heading -->
+        <aside>
+          <h2 class="lg:text-3xl font-semibold">Contact Me.<span class="text-custom-gray">________</span></h2>
+        </aside>
+
+
+        <!-- <p>I'm open for both freelance and fulltime contracts. Feel free to reach out and discuss your interesting ideas.</p> -->
+
+        <div class="text-left md:text-center py-9">
+
+          <h2 class=" font-semibold text-lg md:text-2xl">Let's Work Together</h2>
+
+        <p class="py-8 px-10 text-base lg:text-xl">Looking for a software developer for your team? You can reach out to me via email by clicking the button below. I'm also open to making friends and meeting awesome people,feel free to reach out and discuss your interesting ideas.</p>
+
+        <a class=" transition-all inline-block rounded-2xl py-4 px-6 bg-custom-teal text-2xl font-normal text-custom-space  " href="mailto:johngodwinaye@gmail.com">Work With Me</a>
+
+          
+        </div>
+
+  </section>
+
+  </section>
 </main>
+
+
+<footer class="flex flex-col items-center justify-center pt-12 pb-4">
+
+  <div class="flex md:hidden justify-between items-center gap-1 pb-5">
+
+    <div class="flex  justify-between items-center gap-4">
+
+      <a class="hover:bg-custom-teal rounded-xl" target="_blank" href="https://github.com/boivado2">
+        <img src="./images/icons8-github.svg" alt="">
+      </a>
+
+      <a class="hover:bg-custom-teal rounded-xl" target="_blank"  href="https://twitter.com/ayi_dev"><img  src="./images/icons8-twitter.svg" alt=""></a>
+
+
+      <a class="hover:bg-custom-teal rounded-xl" target="_blank" href="https://www.linkedin.com/in/john-godwin-5457501b1/"><img class="" src="./images/icons8-linkedin-circled.svg" alt=""></a>
+
+    </div>
+
+  <span class="justify-self-end self-end w-16 h-1 bg-custom-gray"></span>
+
+</div>
+
+  <p class="text-center text-base md:text-xl font-semibold">&copy; John Ayebamodiafere Godwin <span class="date"></span> </p>
+</footer>
+
+<script src="./index.js"></script>
 </body>
-</html>
+</html> 

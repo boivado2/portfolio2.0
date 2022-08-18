@@ -2,6 +2,10 @@
 module.exports = {
   content: ['./index.html'],
   theme: {
+    fontFamily: {
+      "condensed": "'Fira Sans Condensed', sans-serif",
+      "puff": "DynaPuff, cursive"
+    },
     extend: {
       colors: {
         "custom-black": "#222831",
@@ -9,6 +13,7 @@ module.exports = {
         "custom-teal": "#00ADB5",
         "custom-space": "#EEEEEE",
       }
+
     },
   },
   plugins: [],
