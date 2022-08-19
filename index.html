@@ -9,15 +9,20 @@
 </head>
 <body id="home" class=" bg-custom-black text-custom-space  font-condensed leading-5 scroll-smooth">
   <!-- navbar -->
- <nav class=" flex justify-between  items-center h-16 bg-transparent top-0 px-3 md:px-12 2xl:px-20 z-40">
- <div class="">
-  <h1 class=" font-puff text-xl md:text-3xl cursor-pointer"><a href="#home">Godwin</a></h1>
+ <nav class=" flex justify-between  items-center h-16 bg-transparent top-0 py-3 px-3 md:px-12 2xl:px-20 z-40 overflow-hidden flex-wrap md:flex-nowrap">
+ <div class="flex-grow md:flex-grow-0">
+  <h1 class=" font-puff text-2xl md:text-4xl cursor-pointer"><a href="#home">Godwin</a></h1>
+ </div>
+
+
+ <div class="md:hidden flex justify-center items-center relative w-12 h-8 hamburger">
+  <div class="line"></div>
  </div>
   
-    <ul class="md:flex justify-between gap-8 text-lg md:text-xl transition-all hidden">
-      <li class="p-4 relative hover:text-custom-teal cursor-pointer "><a href="#about">About</a></li>
-      <li class="p-4 relative hover:text-custom-teal cursor-pointer "><a href="#project">Projects</a></li>
-      <li class="p-4 relative hover:text-custom-teal cursor-pointer "><a href="#contact">Contacts</a></li>
+    <ul class="md:flex justify-between items-center gap-5 md:gap-2 text-lg md:text-xl transition-all nav-links md:translate-x-0 flex-grow md:flex-grow-0 top-16 md:top-0 fixed  md:relative">
+      <li class="p-4 w-full relative hover:text-custom-teal cursor-pointer "><a class="w-full inline-block" href="#about">About</a></li>
+      <li class="p-4 w-full relative hover:text-custom-teal cursor-pointer "><a class="w-full inline-block" href="#project">Projects</a></li>
+      <li class="p-4 w-full relative hover:text-custom-teal cursor-pointer "><a class="w-full inline-block" href="#contact">Contacts</a></li>
     </ul>
 
  </nav>
@@ -28,11 +33,11 @@
     <!-- introduction section -->
     <section class=" py-12 px-3 md:px-12 2xl:px-20 flex">
           <div class="flex flex-col  justify-center md:items-start items-center ">
-            <p class=" text-xl font-light">Hello, my name is</p>
+            <p class=" text-xs md:text-base font-light">Hello, my name is</p>
 
-            <h2 class=" text-xl md:text-3xl xl:text-6xl text-center  py-4 font-semibold">John Ayebamodiafere Godwin</h2>
+            <h2 class=" text-xl md:text-3xl xl:text-6xl  py-4 font-semibold text-center md:text-left">John Ayebamodiafere Godwin</h2>
 
-            <h3 class="text-xl md:text-2xl xl:text-4xl font-normal">Software Developer</h3>
+            <h3 class="text-base md:text-2xl xl:text-4xl font-normal text-center md:text-left">Software Developer</h3>
 
             <p class="text-base md:text-xl md:w-[60%] py-10 text-center md:text-left font-light ">Innovative Front End Developer with good experience in maintaining and building web pages. I like to craft solid and scalable frontend products with great user experiences. Highly skilled at progressive enhancement, design systems & UI Engineering.</p>
 
@@ -134,21 +139,23 @@
             <h2 class="lg:text-3xl font-semibold">Projects. <span class="text-custom-gray">________</span></h2>
           </aside>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 pt-14">
+          <div class="flex flex-col md:flex-row w-full flex-wrap gap-12 pt-14">
             <aside class="transition">
               <div class="relative rounded-md h-52 overflow-hidden cursor-pointer project_card ">
                 <div class="overlay transition-all duration-200"></div>
-                <img class="absolute h-full w-full left-0 top-0" src="./images/undraw_fixing_bugs_w7gi.png" alt="">
+                <img class="absolute h-full w-full left-0 top-0" src="./images/imvoice.jpeg" alt="">
                 <a class="transition-all duration-500 z-10 absolute left-[-80px] top-1/2 rounded-lg py-2 px-3 bg-custom-teal text-lg font-normal text-custom-space  show-project-github-link"  target="_blank" href="https://github.com/boivado2">Github</a>
-                <a class="z-10 duration-500 transition-all absolute right-[-80px] top-1/2 rounded-lg py-2 px-3 bg-custom-teal text-lg font-normal text-custom-space  show-project-live-link" href="#">Live</a>
+                <a class="z-10 duration-500 transition-all absolute right-[-80px] top-1/2 rounded-lg py-2 px-3 bg-custom-teal text-lg font-normal text-custom-space  show-project-live-link" target="_blank" href="https://bomsinvoiceapp.netlify.app/">Live</a>
 
 
               </div>
 
-              <h3>Invoice App</h3>
-              <div class="flex gap-3">
+              <h3 class="pt-8 pb-4 text-base md:text-lg">Invoice App</h3>
+              <div class="grid grid-cols-3 gap-3">
                 <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">React js</span>
                 <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">Tailwind css</span>
+                <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">Redux</span>
+
 
               </div>
             </aside>
@@ -157,40 +164,29 @@
             <aside class="transition">
               <div class="relative rounded-md h-52 overflow-hidden cursor-pointer project_card ">
                 <div class="overlay transition-all duration-200"></div>
-                <img class="absolute h-full w-full left-0 top-0" src="./images/undraw_fixing_bugs_w7gi.png" alt="">
+                <img class="absolute h-full w-full left-0 top-0" src="./images/feedback.jpeg" alt="">
                 <a class="transition-all duration-500 z-10 absolute left-[-80px] top-1/2 rounded-lg py-2 px-3 bg-custom-gray text-lg font-normal text-custom-space  show-project-github-link"  target="_blank" href="https://github.com/boivado2">Github</a>
-                <a class="z-10 duration-500 transition-all absolute right-[-80px] top-1/2 rounded-lg py-2 px-3 bg-custom-gray text-lg font-normal text-custom-space  show-project-live-link" href="#">Live</a>
+                <a class="z-10 duration-500 transition-all absolute right-[-80px] top-1/2 rounded-lg py-2 px-3 bg-custom-gray text-lg font-normal text-custom-space  show-project-live-link" target="_blank" href="https://suggestionboms.netlify.app/">Live</a>
 
 
               </div>
 
-              <h3>Invoice App</h3>
-              <div class="flex gap-3">
+              <h3 class="pt-8 pb-4 text-base md:text-lg" >Full Stack Feedback App</h3>
+              <div class="grid grid-cols-3 gap-3">
                 <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">React js</span>
                 <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">Tailwind css</span>
+                <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">Redux</span>
+                <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">Redux</span>
+                <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">Nodejs</span>
+                <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">Mongodb</span>
+
+
 
               </div>
             </aside>
 
             
 
-            <aside class="transition">
-              <div class="relative rounded-md h-52 overflow-hidden cursor-pointer project_card ">
-                <div class="overlay transition-all duration-200"></div>
-                <img class="absolute h-full w-full left-0 top-0" src="./images/undraw_fixing_bugs_w7gi.png" alt="">
-                <a class="transition-all duration-500 z-10 absolute left-[-80px] top-1/2 rounded-lg py-2 px-3 bg-custom-teal text-lg font-normal text-custom-space  show-project-github-link"  target="_blank" href="https://github.com/boivado2">Github</a>
-                <a class="z-10 duration-500 transition-all absolute right-[-80px] top-1/2 rounded-lg py-2 px-3 bg-custom-teal text-lg font-normal text-custom-space  show-project-live-link" href="#">Live</a>
-
-
-              </div>
-
-              <h3>Invoice App</h3>
-              <div class="flex gap-3">
-                <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">React js</span>
-                <span class="py-2 px-2 rounded-lg bg-custom-gray text-[10px] lg:text-lg  font-normal text-custom-space text-center">Tailwind css</span>
-
-              </div>
-            </aside>
             
             
           </div>

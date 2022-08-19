@@ -13,22 +13,82 @@ html, body {
 .nav-active {
   position: sticky;
   background-color: #393E46;
+}
+
+
+.nav-links {
+  transform: translateX(-200px);
   transition: all 0.5s linear;
 }
 
 
-  .line:hover:before {
+
+
+.hamburger_active + .nav-links {
+  display: flex;
+  flex-direction: column;
+  top: 4rem;
+  left: 0;
+  transform: translateX(0);
+  background-color: #393E46;
+  transition: all 0.5s linear;
+  width: 100%;
+
+}
+
+
+.line {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 3px;
+  width: 40px;
+  background-color: #EEEEEE;
+  z-index: 10;
+  transition: all .5s linear;
+}
+
+
+  .line:before {
     content: "";
-    background-color: #00ADB5;
-    width: 100%;
-    height: 3px;
-    border-radius: 5px;
     position: absolute;
-    bottom: 0;
     left: 0;
-    transition: all 0.5ms ease-in-out;
+    height: 3px;
+    width: 50px;
+    background-color: #EEEEEE;
+    top: -10px;
+
+
   }
 
+  .line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    height: 3px;
+    width: 50px;
+    background-color: #EEEEEE;
+
+  }
+
+  .hamburger_active .line {
+    transform: rotate(60deg);
+    width: 30px;
+    left: 10px;
+    transition: all .5s linear;
+  }
+
+  .hamburger_active .line::before {
+    transform: rotate(60deg);
+    top: 1px;
+    width: 30px;
+
+  }
+
+  .hamburger_active .line::after {
+    visibility: hidden;
+  }
 
 
   .project_card:hover .show-project-github-link {
